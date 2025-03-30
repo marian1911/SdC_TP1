@@ -3,10 +3,10 @@ Flat profile:
 Each sample counts as 0.01 seconds.
   %   cumulative   self              self     total           
  time   seconds   seconds    calls   s/call   s/call  name    
- 60.65     12.19    12.19        1    12.19    12.79  func1
- 32.39     18.70     6.51        1     6.51     6.51  func2
-  3.98     19.50     0.80                             main
-  2.99     20.10     0.60        1     0.60     0.60  new_func1
+ 60.35     12.83    12.83        1    12.83    13.57  func1
+ 32.41     19.72     6.89        1     6.89     6.89  func2
+  3.76     20.52     0.80                             main
+  3.48     21.26     0.74        1     0.74     0.74  new_func1
 
  %         the percentage of the total running time of the
 time       program used by this function.
@@ -44,23 +44,23 @@ notice and this notice are preserved.
 		     Call graph (explanation follows)
 
 
-granularity: each sample hit covers 4 byte(s) for 0.05% of 20.10 seconds
+granularity: each sample hit covers 4 byte(s) for 0.05% of 21.26 seconds
 
 index % time    self  children    called     name
                                                  <spontaneous>
-[1]    100.0    0.80   19.30                 main [1]
-               12.19    0.60       1/1           func1 [2]
-                6.51    0.00       1/1           func2 [3]
+[1]    100.0    0.80   20.46                 main [1]
+               12.83    0.74       1/1           func1 [2]
+                6.89    0.00       1/1           func2 [3]
 -----------------------------------------------
-               12.19    0.60       1/1           main [1]
-[2]     63.6   12.19    0.60       1         func1 [2]
-                0.60    0.00       1/1           new_func1 [4]
+               12.83    0.74       1/1           main [1]
+[2]     63.8   12.83    0.74       1         func1 [2]
+                0.74    0.00       1/1           new_func1 [4]
 -----------------------------------------------
-                6.51    0.00       1/1           main [1]
-[3]     32.4    6.51    0.00       1         func2 [3]
+                6.89    0.00       1/1           main [1]
+[3]     32.4    6.89    0.00       1         func2 [3]
 -----------------------------------------------
-                0.60    0.00       1/1           func1 [2]
-[4]      3.0    0.60    0.00       1         new_func1 [4]
+                0.74    0.00       1/1           func1 [2]
+[4]      3.5    0.74    0.00       1         new_func1 [4]
 -----------------------------------------------
 
  This table describes the call tree of the program, and was sorted by
